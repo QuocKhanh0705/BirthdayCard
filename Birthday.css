@@ -92,10 +92,12 @@ body::after {
 
 #card-front {
     left: 0;
+    z-index: 1;
 }
 
 #card-inside {
     left: 50%;
+    z-index: 0;
 }
 
 #card-inside {
@@ -359,26 +361,28 @@ a:hover {
 
     #card-front,
     #card-inside {
-        width: 50%;
+        position: absolute;
+        left: 0;
+        width: 100%;
         height: 100%;
         min-height: 0;
     }
 
     .wrap {
-        padding: 1.25em 1em;
+        padding: 1.5em 1.25em;
     }
 
     #card h1 {
-        font-size: clamp(32px, 9vw, 48px);
+        font-size: clamp(38px, 12vw, 58px);
     }
 
     #card-inside {
-        font-size: clamp(0.82em, 2.8vw, 1em);
-        line-height: 1.35;
+        font-size: clamp(1em, 4vw, 1.15em);
+        line-height: 1.45;
     }
 
     #card-front button {
-        right: -8px;
+        right: 16px;
         bottom: 0.75em;
         width: 44px;
         height: 44px;
