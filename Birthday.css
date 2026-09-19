@@ -339,31 +339,42 @@ a:hover {
 
 @media (max-width: 600px) {
     body {
-        padding: 20px;
+        padding: 12px;
+        overflow: hidden;
     }
 
     #card {
-        width: calc(100vw - 40px);
-        height: min(540px, calc(100vh - 40px));
+        width: 100%;
+        max-width: 680px;
+        height: min(540px, calc(100vh - 24px));
     }
 
     #card-front,
     #card-inside {
-        left: 0;
-        width: 100%;
+        left: 50%;
+        width: 50%;
         height: 100%;
         min-height: 0;
     }
 
+    .wrap {
+        padding: 1.25em 1em;
+    }
+
     #card h1 {
-        font-size: 48px;
+        font-size: clamp(32px, 9vw, 48px);
     }
 
     #card-inside {
-        font-size: 1em;
+        font-size: clamp(0.82em, 2.8vw, 1em);
+        line-height: 1.35;
     }
 
     #card-front button {
-        right: 16px;
+        right: -8px;
+        bottom: 0.75em;
+        width: 44px;
+        height: 44px;
+        font-size: 1.25em;
     }
 }
