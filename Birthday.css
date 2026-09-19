@@ -90,6 +90,14 @@ body::after {
     overflow: hidden;
 }
 
+#card-front {
+    left: 0;
+}
+
+#card-inside {
+    left: 50%;
+}
+
 #card-inside {
     overflow: hidden;
 }
@@ -351,7 +359,6 @@ a:hover {
 
     #card-front,
     #card-inside {
-        left: 50%;
         width: 50%;
         height: 100%;
         min-height: 0;
